@@ -120,3 +120,8 @@ setopt prompt_subst
 PROMPT="${LOCAL_STATUS} %{$fg[cyan]%}%c %{$reset_color%}"
 RPROMPT='$(git_prompt)'
 
+ #boot2docker exports
+139 export DOCKER_CERT_PATH=~/.boot2docker/certs/boot2docker-vm
+140 export DOCKER_TLS_VERIFY=1
+141 export DOCKER_HOST=tcp://192.168.59.103:2376
+
