@@ -7,9 +7,6 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set background=dark
-colorscheme solarized
-
-colors zenburn
 
 noremap <F1> :NERDTreeFind<ESC>
 
@@ -31,9 +28,3 @@ let NERDTreeIgnore=['\.DS_Store$', '\.vim$']
 cnoremap sudow w !sudo tee % >/dev/null
 
 set clipboard=unnamed
-
-"Vim Rainbow parentheses always on
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
